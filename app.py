@@ -27,7 +27,18 @@ class YOLOWebcam(VideoTransformerBase):
 
 # Webcam section
 st.subheader("📷 Live Webcam Detection")
-webrtc_streamer(key="webcam", video_transformer_factory=YOLOWebcam)
+webrtc_streamer(
+    key="webcam",
+    video_transformer_factory=YOLOWebcam,
+    media_stream_constraints={
+        "video": {
+            "width": {"ideal": 320},
+            "height": {"ideal": 240}
+        },
+        "audio": False
+    }
+)
+
 
 # Image upload fallback
 st.subheader("🖼️ Or Upload an Image")
