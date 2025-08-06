@@ -29,3 +29,6 @@ A real-time face mask detection application that identifies whether a person is 
 - **Model File**: `mask_detector.pt` 
 
 ---
+
+## Demonstration
+- Demonstration video named "demo.mp4" included
