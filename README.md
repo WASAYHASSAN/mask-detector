@@ -26,6 +26,6 @@ A real-time face mask detection application that identifies whether a person is 
 - **Classes**:
   - `0`: With Mask
   - `1`: Without Mask
-- **Model File**: `best.pt` (place it in the root directory)
+- **Model File**: `mask_detector.pt` (place it in the root directory)
 
 ---
